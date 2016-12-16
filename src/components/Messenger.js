@@ -11,11 +11,10 @@ var Messenger = (function (_super) {
         _super.apply(this, arguments);
     }
     Messenger.prototype.render = function () {
-        return (React.createElement("div", null, 
-            "\"Hello from the Messenger class, \" + ", 
+        return (React.createElement("div", null,
+            "\"Hello from the Messenger class, \" + ",
             this.props.name));
     };
     return Messenger;
 }(React.Component));
 exports.Messenger = Messenger;
-//# sourceMappingURL=Messenger.js.map
