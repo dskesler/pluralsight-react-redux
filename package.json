@@ -44,12 +44,14 @@
     "express": "4.13.4",
     "extract-text-webpack-plugin": "1.0.1",
     "file-loader": "0.8.5",
+    "jquery": "^2.2.3",
     "jsdom": "8.5.0",
     "mocha": "2.4.5",
     "nock": "8.0.0",
     "npm-run-all": "1.8.0",
     "open": "0.0.5",
     "react-addons-test-utils": "15.0.2",
+    "react-router": "^2.4.0",
     "redux-immutable-state-invariant": "1.2.3",
     "redux-mock-store": "1.0.2",
     "rimraf": "^2.5.2",
@@ -66,7 +68,7 @@
     "type": "git",
     "url": "https://github.com/coryhouse/pluralsight-redux-starter"
   },
-    "scripts": {
+  "scripts": {
     "build-ts": "webpack --debug",
     "build:debug": "npm run build -- --debug",
     "prestart": "babel-node tools/startMessage",
@@ -79,6 +81,6 @@
     "precompile": "npm run clean",
     "clean": "rimraf lib/*",
     "compile": "npm run compile:ts",
-    "precompile:ts": "tsc --module commonjs"
+    "compile:ts": "tsc --module commonjs"
   }
 }
