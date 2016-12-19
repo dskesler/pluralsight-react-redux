@@ -67,7 +67,7 @@
     "url": "https://github.com/coryhouse/pluralsight-redux-starter"
   },
     "scripts": {
-    "build": "webpack --debug",
+    "build-ts": "webpack --debug",
     "build:debug": "npm run build -- --debug",
     "prestart": "babel-node tools/startMessage",
     "start": "npm-run-all --parallel open:src lint:watch test:watch",
