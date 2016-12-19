@@ -8,7 +8,7 @@ var React = require("react");
 var Messenger = (function (_super) {
     __extends(Messenger, _super);
     function Messenger() {
-        _super.apply(this, arguments);
+        return _super.apply(this, arguments) || this;
     }
     Messenger.prototype.render = function () {
         return (React.createElement("div", null,
@@ -18,4 +18,4 @@ var Messenger = (function (_super) {
     return Messenger;
 }(React.Component));
 exports.Messenger = Messenger;
-// delete this this
+//# sourceMappingURL=Messenger.js.map

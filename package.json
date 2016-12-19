@@ -70,7 +70,7 @@
     "build-ts": "webpack --debug",
     "build:debug": "npm run build -- --debug",
     "prestart": "babel-node tools/startMessage",
-    "start": "npm-run-all --parallel open:src lint:watch test:watch",
+    "start": "npm-run-all --parallel open:src lint:watch test:watch compile:ts",
     "open:src": "babel-node tools/srcServer.js",
     "lint": "node_modules/.bin/esw webpack.config.* src tools",
     "lint:watch": "npm run lint -- --watch",
@@ -79,6 +79,6 @@
     "precompile": "npm run clean",
     "clean": "rimraf lib/*",
     "compile": "npm run compile:ts",
-    "compile:ts": "tsc --module commonjs"
+    "precompile:ts": "tsc --module commonjs"
   }
 }
