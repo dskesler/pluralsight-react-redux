@@ -1,22 +1,16 @@
-"use strict";
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var React = require("react");
-var AboutPage = (function (_super) {
-    __extends(AboutPage, _super);
-    function AboutPage() {
-        return _super.apply(this, arguments) || this;
-    }
-    AboutPage.prototype.render = function () {
-        return (React.createElement("div", null,
-            React.createElement("h1", null, "About"),
-            React.createElement("p", null, "this app uses React, Redux, and React Router")));
-    };
-    return AboutPage;
-}(React.Component));
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.default = AboutPage;
-//# sourceMappingURL=AboutPage.js.map
+import * as React from 'react';
+import { Link } from 'react-router';
+
+class AboutPage extends React.Component<{}, {}> {
+  render() {
+
+    return (
+      <div>
+        <h1>About</h1>
+        <p>this app uses React, Redux, and React Router</p>
+      </div>
+    );
+  }
+}
+
+export default AboutPage;
