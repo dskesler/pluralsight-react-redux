@@ -3,7 +3,7 @@ import path from 'path';
 
 export default {
   debug: true,
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-eval-source-map',
   noInfo: false,
   entry: [
     'eventsource-polyfill', // necessary for hot reloading with IE
@@ -12,7 +12,7 @@ export default {
   ],
   target: 'web',
   output: {
-    path: __dirname + '/dist/', // Note: Physical files are only output by the production build task `npm run build`.
+    path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
     publicPath: '/',
     filename: 'bundle.js'
   },
