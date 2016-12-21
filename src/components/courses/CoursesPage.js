@@ -6,9 +6,11 @@ class CoursesPage extends React.Component {
     return (
       <div >
         <h1>Courses</h1>
-        <li>Course One</li>
-        <li>Course Two</li>
-        <li>Course Three</li>
+        <p>this app uses React, Redux, and React Router</p>
+        <p>Description of courses:</p>
+        <li>Course one</li>
+        <li>Course two</li>
+        <li>Course three</li>
       </div>
     );
   }

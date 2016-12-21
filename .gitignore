@@ -35,6 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-# .idea/
-dist/
-/.vscode/
+.idea/encodings.xml
+.idea/jsLibraryMappings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/pluralsight-react-redux.iml
+.idea/workspace.xml
