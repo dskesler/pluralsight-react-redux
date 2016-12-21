@@ -8,6 +8,8 @@ class HomePage extends React.Component {
     return(
       <div className="jumbotron">
         <h1>Pluralsight Admin</h1>
+
+        <Link to="courses">Courses</Link>
         <Link to="about">Learn more</Link>
       </div>
     );
