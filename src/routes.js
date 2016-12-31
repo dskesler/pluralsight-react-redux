@@ -9,5 +9,6 @@ export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage}/>
     <Route path="about" component={AboutPage}/>
+    <Route path="courses" component={CoursesPage}/>
   </Route>
 );
