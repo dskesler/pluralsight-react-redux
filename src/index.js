@@ -10,9 +10,9 @@ import './styles/styles.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'; // Yep, that's right. You can import SASS/CSS files too! Webpack will run the associated loader and plug this into the page.
 
 const store = configureStore();
-
+//Provider wraps the container component so it can be connect to redux store
 render(
-  <Provider store={store}> {/*Provider wraps the container component so it can be connect to redux store*/}
+  <Provider store={store}>
     <Router history={browserHistory} routes={routes} />
   </Provider>,
   document.getElementById('app')

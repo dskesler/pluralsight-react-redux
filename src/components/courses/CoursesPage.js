@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import {connect} from 'react-redux';
 import * as courseActions from '../../actions/courseActions';
 
@@ -29,6 +29,7 @@ class CoursesPage extends React.Component {
   }
 
   render() {
+    debugger;
 
     return (
       <div >
@@ -50,11 +51,12 @@ class CoursesPage extends React.Component {
 }
 
 CoursesPage.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  courses: PropTypes.array.isRequired
-}
+  dispatch: React.PropTypes.func.isRequired,
+  courses: React.PropTypes.array.isRequired
+};
 
 function mapStateToProps(state, ownProps) {
+  debugger;
   return {
     courses: state.courses
   };
