@@ -11,6 +11,7 @@
     "bootstrap": "3.3.6",
     "jquery": "2.2.3",
     "react": "^15.1.0",
+    "react-bootstrap-table": "^2.8.2",
     "react-dom": "^15.1.0",
     "react-redux": "4.4.5",
     "react-router": "2.4.0",
@@ -52,6 +53,7 @@
     "npm-run-all": "1.8.0",
     "open": "0.0.5",
     "react-addons-test-utils": "15.0.2",
+    "react-bootstrap-table": "^2.8.2",
     "react-router": "^2.4.0",
     "redux-immutable-state-invariant": "1.2.3",
     "redux-mock-store": "1.0.2",
@@ -81,8 +83,6 @@
     "test": "mocha --reporter progress tools/testSetup.js \"src/**/*.test.js\"",
     "test:watch": "npm run test -- --watch",
     "precompile": "npm run clean",
-    "clean": "rimraf lib/*",
-    "compile": "npm run compile:ts",
-    "compile:ts": "tsc --module commonjs"
+    "clean": "rimraf lib/*"
   }
 }
