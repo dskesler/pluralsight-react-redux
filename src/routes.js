@@ -8,7 +8,7 @@ import CoursesPage from './components/courses/CoursesPage';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomePage}/>
-    <Route path="aboutMeh" component={AboutPage}/>
+    <Route path="about" component={AboutPage}/>
     <Route path="courses" component={CoursesPage}/>
   </Route>
 );
