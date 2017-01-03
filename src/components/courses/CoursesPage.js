@@ -37,7 +37,7 @@ class CoursesPage extends React.Component {
         <input
           type="text"
           onChange={this.onTitleChange}
-          value={this.state.course.title}/>
+          value={this.state.course.title}/>3
 
         <input
           type="submit"
